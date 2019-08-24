@@ -74,11 +74,11 @@ class RfxtrxCover(rfxtrx.RfxtrxDevice, CoverDevice):
 
     def open_cover(self, **kwargs):
         """Move the cover up."""
-        self._send_command("roll_up")
+        self._send_command("roll_down")
 
     def close_cover(self, **kwargs):
         """Move the cover down."""
-        self._send_command("roll_down")
+        self._send_command("roll_up")
 
     def stop_cover(self, **kwargs):
         """Stop the cover."""
